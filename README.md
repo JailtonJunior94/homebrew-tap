@@ -1,18 +1,37 @@
-# JailtonJunior94 Tap
+# JailtonJunior94 Homebrew Tap
 
-## How do I install these formulae?
+## Formulae disponíveis
 
-`brew install jailtonjunior94/tap/<formula>`
+| Formula | Descrição |
+|---------|-----------|
+| `ai-spec` | CLI para governança de IA em projetos de software |
 
-Or `brew tap jailtonjunior94/tap` and then `brew install <formula>`.
+## Instalação
 
-Or, in a `brew bundle` `Brewfile`:
+```bash
+brew install jailtonjunior94/tap/ai-spec
+```
+
+Ou separadamente:
+
+```bash
+brew tap jailtonjunior94/tap
+brew install ai-spec
+```
+
+Em um `Brewfile`:
 
 ```ruby
 tap "jailtonjunior94/tap"
-brew "<formula>"
+brew "ai-spec"
 ```
 
-## Documentation
+## Atualização
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```bash
+brew update && brew upgrade ai-spec
+```
+
+## Documentação
+
+`brew help`, `man brew` ou consulte a [documentação do Homebrew](https://docs.brew.sh).

@@ -5,21 +5,21 @@
 class AiSpec < Formula
   desc "CLI para governanca de IA em projetos de software"
   homepage "https://github.com/JailtonJunior94/orchestrator"
-  version "0.24.2"
+  version "0.25.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JailtonJunior94/orchestrator/releases/download/v0.24.2/ai-spec_0.24.2_darwin_amd64.tar.gz"
-      sha256 "53766bb2d610c84b2bace4b82b5e0f382cf19c2bd49c8b12ed127e5eb519ac7b"
+      url "https://github.com/JailtonJunior94/orchestrator/releases/download/v0.25.0/ai-spec_0.25.0_darwin_amd64.tar.gz"
+      sha256 "82ce0f0021c142a068aecf69f396cb3825c698f820fa63e7d6ef345ba95c9e81"
 
       define_method(:install) do
         bin.install "ai-spec"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JailtonJunior94/orchestrator/releases/download/v0.24.2/ai-spec_0.24.2_darwin_arm64.tar.gz"
-      sha256 "2b6d2e5c775ce28771b01b6a262a1d98dcbf3bb3fcf140310c5cc2a34f0452ed"
+      url "https://github.com/JailtonJunior94/orchestrator/releases/download/v0.25.0/ai-spec_0.25.0_darwin_arm64.tar.gz"
+      sha256 "83976fdfa4d845650b883e0cd239f393f674734c99c52c46cc6228ce0fae75e7"
 
       define_method(:install) do
         bin.install "ai-spec"
@@ -29,15 +29,15 @@ class AiSpec < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JailtonJunior94/orchestrator/releases/download/v0.24.2/ai-spec_0.24.2_linux_amd64.tar.gz"
-      sha256 "fb3c34aece393a0d19816c20d403a9f385da02ac14b756bb03faf6732c062ae4"
+      url "https://github.com/JailtonJunior94/orchestrator/releases/download/v0.25.0/ai-spec_0.25.0_linux_amd64.tar.gz"
+      sha256 "ecc3a600d6e510ed97889a3c86bbd532e015af2dd617b6c29594209ac3956bd5"
       define_method(:install) do
         bin.install "ai-spec"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JailtonJunior94/orchestrator/releases/download/v0.24.2/ai-spec_0.24.2_linux_arm64.tar.gz"
-      sha256 "b20525fe3a624c3a0233d1936a2725c6f6f1118dadc177bc039bbf80c271750c"
+      url "https://github.com/JailtonJunior94/orchestrator/releases/download/v0.25.0/ai-spec_0.25.0_linux_arm64.tar.gz"
+      sha256 "c4a9c71e22c8198c171ec010f9222a3e37ea842a92cf411cc911b7bbc7b5b513"
       define_method(:install) do
         bin.install "ai-spec"
       end
